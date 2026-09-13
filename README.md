@@ -47,3 +47,9 @@ The deployed site has no runtime dependency on Python, Node.js, or a backend ser
 - Hera (MICRO 2026) is listed on the Tsinghua profile. A paper URL is not fabricated when the source provides none; the title is rendered as plain text.
 
 The former template owner's biography, publications, awards, email, Scholar identifier, metadata, and analytics account have been removed from the served page. The uploaded full CV and work summary are not included in this public repository.
+
+## Google Scholar reconciliation (2026-09-13)
+
+The supplied two-page Scholar PDF contains 11 rows. Ten complete titles are already represented in publications.json. The truncated row “in Full-Path-Indexed File System” appears to duplicate the APPT 2019 paper, with an incomplete author list; it is not added as a separate paper pending contrary evidence. Hera (MICRO 2026), present on the Tsinghua profile but absent from this Scholar snapshot, is retained. The website therefore lists 11 distinct papers.
+
+The snapshot supplies page ranges added to seven records. The PACT 2022 DOI is 10.1145/3559009.3569676. The survey DOI and PDF were verified against the journal publication at https://crad.ict.ac.cn/cn/article/pdf/preview/10.7544/issn1000-1239.2020.20190820.pdf . Full author names remain sourced from the existing primary references, rather than malformed or abbreviated Scholar author strings.

@@ -20,7 +20,7 @@
       "Huatao Wu",
       "Jiwu Shu"
     ],
-    "venue": "24th USENIX Conference on File and Storage Technologies",
+    "venue": "24th USENIX Conference on File and Storage Technologies, pp. 19–34",
     "short": "FAST'26",
     "year": 2026,
     "link": "https://www.usenix.org/conference/fast26/presentation/wang",
@@ -59,7 +59,7 @@
     "venue": "31st International Conference on Parallel Architectures and Compilation Techniques",
     "short": "PACT'22",
     "year": 2022,
-    "link": null
+    "link": "https://doi.org/10.1145/3559009.3569676"
   },
   {
     "title": "Aria: Tolerating Skewed Workloads in Secure In-memory Key-value Stores",
@@ -70,7 +70,7 @@
       "Qing Wang",
       "Jiwu Shu"
     ],
-    "venue": "37th IEEE International Conference on Data Engineering",
+    "venue": "37th IEEE International Conference on Data Engineering, pp. 1020–1031",
     "short": "ICDE'21",
     "year": 2021,
     "link": "https://doi.org/10.1109/ICDE51399.2021.00093",
@@ -85,7 +85,7 @@
       "Youyou Lu",
       "Jiwu Shu"
     ],
-    "venue": "ACM Transactions on Storage, 16(2)",
+    "venue": "ACM Transactions on Storage, 16(2), pp. 1–31",
     "short": "TOS'20",
     "year": 2020,
     "link": "https://storage.cs.tsinghua.edu.cn/papers/tos20shieldnvm.pdf"
@@ -100,7 +100,8 @@
     "venue": "Journal of Computer Research and Development, 57(5): 912–927 (in Chinese)",
     "short": "CRAD'20",
     "year": 2020,
-    "link": null
+    "link": "https://doi.org/10.7544/issn1000-1239.2020.20190820",
+    "pdf": "https://crad.ict.ac.cn/cn/article/pdf/preview/10.7544/issn1000-1239.2020.20190820.pdf"
   },
   {
     "title": "InvisibleFL: Federated Learning over Non-Informative Intermediate Updates against Multimedia Privacy Leakages",
@@ -113,7 +114,7 @@
       "Yuezhi Zhou",
       "Yaoxue Zhang"
     ],
-    "venue": "28th ACM International Conference on Multimedia",
+    "venue": "28th ACM International Conference on Multimedia, pp. 753–762",
     "short": "ACM MM'20",
     "year": 2020,
     "link": "https://doi.org/10.1145/3394171.3413923"
@@ -127,7 +128,7 @@
       "Fan Yang",
       "Jiwu Shu"
     ],
-    "venue": "57th ACM/IEEE Design Automation Conference",
+    "venue": "57th ACM/IEEE Design Automation Conference, pp. 1–6",
     "short": "DAC'20",
     "year": 2020,
     "link": "https://storage.cs.tsinghua.edu.cn/papers/dac20-sp3.pdf"
@@ -156,7 +157,7 @@
       "Haiyu Mao",
       "Jiwu Shu"
     ],
-    "venue": "56th ACM/IEEE Design Automation Conference",
+    "venue": "56th ACM/IEEE Design Automation Conference, pp. 1–6",
     "short": "DAC'19",
     "year": 2019,
     "link": "https://storage.cs.tsinghua.edu.cn/papers/dac19-ccNVM.pdf"
@@ -170,7 +171,7 @@
       "Fan Yang",
       "Jiwu Shu"
     ],
-    "venue": "13th International Symposium on Advanced Parallel Processing Technologies",
+    "venue": "13th International Symposium on Advanced Parallel Processing Technologies, pp. 43–54",
     "short": "APPT'19",
     "year": 2019,
     "link": "https://doi.org/10.1007/978-3-030-29611-7_4"

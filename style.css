@@ -84,16 +84,20 @@ body {
   }
 }
 
-.avatar-rect {
+.profile-portrait {
   width: 140px;
   height: auto;
+  max-height: none;
+  aspect-ratio: auto;
+  display: block;
+  align-self: center;
   object-fit: contain;
   border-radius: 0;
   flex-shrink: 0;
 }
 
 @media (min-width: 768px) {
-  .avatar-rect {
+  .profile-portrait {
     width: 180px;
     height: auto;
   }
@@ -466,7 +470,7 @@ footer p {
     font-size: 1rem;
   }
 
-  .avatar-rect {
+  .profile-portrait {
     width: 104px;
     height: auto;
   }

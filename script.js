@@ -1,69 +1,77 @@
-document.addEventListener('DOMContentLoaded', () => {
-  fetch('papers/publications.json')
-    .then(response => response.json())
-    .then(papers => {
-      const grouped = {};
-      papers.forEach(paper => {
-        if (!grouped[paper.year]) {
-          grouped[paper.year] = [];
-        }
-        grouped[paper.year].push(paper);
-      });
+function renderPublications(papers, author = 'Fan Yang') {
+  if (!Array.isArray(papers) || papers.length === 0) throw new Error('No publications found.');
+  const escape = value => String(value).replace(/[&<>"']/g, char =>
+    ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'}[char]));
+  const cleanName = name => name.replace(/\s*\*+$/, '');
+  const isLeadAuthor = paper => cleanName(paper.authors[0]) === author ||
+    (paper.equalContribution || []).includes(author);
+  const link = (url, text, className) => {
+    if (!/^https?:\/\//.test(url)) throw new Error('Invalid publication URL.');
+    return '<a href="' + escape(url) + '" target="_blank" rel="noopener noreferrer" class="' +
+      className + '">' + escape(text) + '</a>';
+  };
+  const grouped = new Map();
+  for (const paper of papers) {
+    if (!Number.isInteger(paper.year) || !paper.title || !paper.venue ||
+        !Array.isArray(paper.authors) || !paper.authors.length ||
+        !paper.authors.every(name => typeof name === 'string')) {
+      throw new Error('Invalid publication record.');
+    }
+    if (!grouped.has(paper.year)) grouped.set(paper.year, []);
+    grouped.get(paper.year).push(paper);
+  }
 
-      const container = document.getElementById('paper-list');
-      container.innerHTML = '';
-      const sortedYears = Object.keys(grouped).sort((a, b) => parseInt(b) - parseInt(a));
+  return [...grouped.keys()].sort((a, b) => b - a).map(year => {
+    const items = [...grouped.get(year)]
+      .sort((a, b) => Number(isLeadAuthor(b)) - Number(isLeadAuthor(a)))
+      .map(paper => {
+        const tag = paper.short ? '<strong class="paper-venue-tag">[' + escape(paper.short) + ']</strong>' : '';
+        const title = paper.link
+          ? link(paper.link, paper.title, 'paper-title')
+          : '<span class="paper-title">' + escape(paper.title) + '</span>';
+        const pdf = paper.pdf ? ' ' + link(paper.pdf, '[PDF]', 'blue-tag') : '';
+        const code = paper.code ? ' ' + link(paper.code, '[Code]', 'blue-tag') : '';
+        const authors = paper.authors.map(name => cleanName(name) === author
+          ? '<strong class="highlight">' + escape(name) + '</strong>' : escape(name)).join(', ');
+        const awardInline = paper.award && paper.award.length < 30
+          ? ' (<span class="award-inline">' + escape(paper.award) + '</span>)' : '';
+        const awardBlock = paper.award && paper.award.length >= 30
+          ? '<br><span class="award">' + escape(paper.award) + '</span>' : '';
+        const note = paper.note ? '<br><span class="paper-note">' + escape(paper.note) + '</span>' : '';
+        return '<li><span class="paper-heading">' + tag + title + pdf + code + '</span>' +
+          '<span class="authors">' + authors + '</span><br>' +
+          '<span class="venue-full">' + escape(paper.venue) + ', ' + year + awardInline + '</span>' +
+          awardBlock + note + '</li>';
+      }).join('\n');
+    return '<h3>' + year + '</h3>\n<ul>\n' + items + '\n</ul>';
+  }).join('\n');
+}
 
-      sortedYears.forEach(year => {
-        const yearHeader = document.createElement('h3');
-        yearHeader.textContent = year;
-        container.appendChild(yearHeader);
-
-        const ul = document.createElement('ul');
-        const papersByAuthorship = grouped[year].sort((a, b) =>
-          Number(b.authors?.[0] === "Shaoxun Zeng") - Number(a.authors?.[0] === "Shaoxun Zeng")
-        );
-        papersByAuthorship.forEach(paper => {
-          const item = document.createElement('li');
-
-          // 高亮所有包含 "Shaoxun Zeng" 的作者名（大小写敏感匹配子串）
-          const highlightedAuthors = paper.authors.map(name =>
-            name.includes("Shaoxun Zeng") ? `<span class="highlight">${name}</span>` : name
-          ).join(", ");
-
-          const codeLink = paper.code ? ` <a href="${paper.code}" target="_blank" rel="noopener noreferrer" class="blue-tag">[Code]</a>` : "";
-
-          const MAX_INLINE_AWARD = 30;
-          const awardInline = paper.award && paper.award.length < MAX_INLINE_AWARD
-            ? ` (<span class="award-inline">${paper.award}</span>)`
-            : "";
-
-          const awardBlock = paper.award && paper.award.length >= MAX_INLINE_AWARD
-            ? `<br><span class="award">${paper.award}</span>`
-            : "";
-
-          const titleHtml = paper.link
-            ? `<a href="${paper.link}" target="_blank" rel="noopener noreferrer" class="paper-title">${paper.title}</a>`
-            : `<span class="paper-title">${paper.title}</span>`;
-
-          const venueTag = paper.short
-            ? `<strong class="paper-venue-tag">[${paper.short}]</strong>`
-            : "";
-
-          item.innerHTML =
-            `<span class="paper-heading">${venueTag}${titleHtml}${codeLink}</span>` +
-            `<span class="authors">${highlightedAuthors}</span><br>` +
-            `<span class="venue-full">${paper.venue}, ${paper.year}${awardInline}</span>` +
-            awardBlock;
-
-          ul.appendChild(item);
-        });
-        container.appendChild(ul);
-      });
-    })
-    .catch(error => {
+// Use this same renderer in the browser and during the static build.
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = { renderPublications };
+  if (require.main === module) {
+    const fs = require('node:fs');
+    const path = require('node:path');
+    const input = process.argv[2] || path.join(__dirname, 'papers/publications.json');
+    process.stdout.write(renderPublications(JSON.parse(fs.readFileSync(input, 'utf8'))));
+  }
+} else if (typeof document !== 'undefined') {
+  document.addEventListener('DOMContentLoaded', async () => {
+    const container = document.getElementById('paper-list');
+    if (!container) return;
+    try {
+      const response = await fetch('papers/publications.json');
+      if (!response.ok) throw new Error('Publication data could not be loaded.');
+      const papers = await response.json();
+      container.innerHTML = renderPublications(papers);
+      container.dataset.state = 'ready';
+      container.dataset.count = String(papers.length);
+    } catch (error) {
       console.error('Failed to load publications:', error);
-      const container = document.getElementById('paper-list');
-      container.innerHTML = '<p class="paper-list-error">Failed to load publication list.</p>';
-    });
-});
+      container.innerHTML = '<p class="paper-list-error">Publications are temporarily unavailable. ' +
+        '<a href="https://storage.cs.tsinghua.edu.cn/~yf/" class="blue-tag">View my Tsinghua profile.</a></p>';
+      container.dataset.state = 'error';
+    }
+  });
+}

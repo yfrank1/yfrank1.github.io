@@ -4,26 +4,20 @@ This file provides guidance to coding agents when working with code in this repo
 
 ## Project Overview
 
-Personal academic website for Shaoxun Zeng (shaoxunzeng.github.io), hosted on GitHub Pages. The site uses a hybrid static/dynamic rendering approach: `js_index.html` is the editable source template, and `index.html` is the pre-rendered static output served to users.
+Personal academic and professional website for Fan Yang (杨帆), hosted at `https://csyyyang.github.io/yfrank.github.io/` using GitHub Pages. The site uses a hybrid static/dynamic rendering approach: `js_index.html` is the editable source template, and `index.html` is the pre-rendered static output served to users.
 
 ## Build
 
-**Prerequisites** (one-time setup):
-```bash
-pip3 install pytest-playwright playwright
-playwright install chromium
-```
+**Prerequisites**: Python 3.9+ and Node.js 18+. No third-party packages or browser downloads are required.
 
 **Build command:**
 ```bash
-# render.py requires a local HTTP server to be running first:
-python -m http.server 8000 --bind 127.0.0.1 &
 python render.py
 ```
 
-Note: use `python` (not `python3`) on Windows. The server must be running before `render.py` is invoked because Playwright fetches `js_index.html` via HTTP.
+Note: use `python` (not `python3`) on Windows. No local HTTP server is required to build.
 
-The build script uses Playwright (headless Chromium) to render `js_index.html` with JavaScript executed, then writes the result to `index.html` and updates `sitemap.xml` with the current date.
+The build script executes the shared `renderPublications` function from `script.js` using Node.js, inserts the generated publication HTML into `js_index.html`, checks the publication count, writes `index.html`, and updates `sitemap.xml`. The dynamic page and static build use the same renderer. A rendering failure must not overwrite the previous output.
 
 **Local development preview:**
 ```bash
@@ -38,10 +32,10 @@ Use `js_index.html` for live development (dynamic JS), then run the build to reg
 ### Two-file rendering pattern
 - **`js_index.html`** — the source of truth for page structure and content; loads `script.js` to dynamically render publications
 - **`index.html`** — auto-generated static output; do not edit directly
-- **`script.js`** — fetches `papers/publications.json` and builds the publication list DOM at runtime; stripped from the output during build
+- **`script.js`** — shared escaped-HTML publication renderer, usable in a browser or with Node.js. The browser loads `papers/publications.json`; the build reads the same file locally. The runtime script is stripped from the output during build.
 
 ### Content data
-- **`papers/publications.json`** — single source of truth for all publications. Each entry has: `title`, `authors` (array), `venue`, `short`, `year` (integer), `link`, and optional `code` and `award` fields. Publications are grouped by year (descending) in the rendered output. The author "Shaoxun Zeng" is bold/highlighted automatically.
+- **`papers/publications.json`** — single source of truth for all publications. Each entry has: `title`, `authors` (array), `venue`, `short`, `year` (integer), `link`, and optional `pdf`, `code`, `award`, `note`, and `equalContribution` fields. Publications are grouped by year (descending). Fan Yang is bold/highlighted automatically, including starred author names; first and co-first authored papers appear first within each year.
 - `year` must be an integer (not a string). `link` and `code` should be a URL string or `null`; omitting them is also acceptable.
 - Awards shorter than 30 characters are displayed inline after the venue; longer awards appear on a new line below.
 - Papers with no `link` render the title as plain text (no `<a>` tag); do not use `"link": ""` as a substitute for no link — use `null` or omit the field.

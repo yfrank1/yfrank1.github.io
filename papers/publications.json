@@ -1,133 +1,178 @@
 [
   {
-    "title": "GPU Checkpoint/Restore Made Fast and Lightweight",
+    "title": "Cost-efficient Archive Cloud Storage with Tape: Design and Deployment",
     "authors": [
-      "Shaoxun Zeng",
-      "Tingxu Ren",
-      "Jiwu Shu",
-      "Youyou Lu"
+      "Qing Wang*",
+      "Fan Yang*",
+      "Qiang Liu",
+      "Geng Xiao",
+      "Yongpeng Chen",
+      "Hao Lan",
+      "Leiming Chen",
+      "Bangzhu Chen",
+      "Chenrui Liu",
+      "Pingchang Bai",
+      "Bin Huang",
+      "Zigan Luo",
+      "Mingyu Xie",
+      "Yu Wang",
+      "Youyou Lu",
+      "Huatao Wu",
+      "Jiwu Shu"
     ],
-    "venue": "The 24th USENIX Conference on File and Storage Technologies",
+    "venue": "24th USENIX Conference on File and Storage Technologies",
     "short": "FAST'26",
     "year": 2026,
-    "link": "https://www.usenix.org/conference/fast26/presentation/zeng",
-    "award": "Distinguished Artifact Award"
-  },
-  {
-    "title": "Speeding Up Write-Read Orders in Disaggregated Storage",
-    "authors": [
-      "Shaoxun Zeng",
-      "Xiaojian Liao",
-      "Hao Guo",
-      "Jiwu Shu",
-      "Youyou Lu"
-    ],
-    "venue": "ACM Transactions on Storage",
-    "short": "ACM ToS'26",
-    "year": 2026,
-    "link": "https://dl.acm.org/doi/10.1145/3829363"
-  },
-  {
-    "title": "WeDLM: Reconciling Diffusion Language Models with Standard Causal Attention for Fast Inference",
-    "authors": [
-      "Aiwei Liu",
-      "Minghua He",
-      "Shaoxun Zeng",
-      "Linhao Zhang",
-      "Chuhan Wu",
-      "Wei Jia",
-      "Yuan Liu",
-      "Yang Yu",
-      "Xiao Zhou",
-      "Jie Zhou"
-    ],
-    "venue": "International Conference on Machine Learning",
-    "short": "ICML'26",
-    "year": 2026,
-    "link": "https://arxiv.org/abs/2512.22737",
-    "award": "Oral"
-  },
-  {
-    "title": "Weaver: Efficient Multi-LLM Serving with Attention Offloading",
-    "authors": [
-      "Shiwei Gao",
+    "link": "https://www.usenix.org/conference/fast26/presentation/wang",
+    "pdf": "https://www.usenix.org/system/files/fast26-wang.pdf",
+    "equalContribution": [
       "Qing Wang",
-      "Shaoxun Zeng",
+      "Fan Yang"
+    ]
+  },
+  {
+    "title": "Hera: Eliminating the I/O Tax of RAID on High-Capacity SSDs",
+    "authors": [
+      "Jian Chen",
+      "Congming Gao",
+      "Fan Yang",
+      "Qing Wang",
+      "Zhengzhi Xin",
+      "Yuhao Zhang",
       "Youyou Lu",
       "Jiwu Shu"
     ],
-    "venue": "USENIX Annual Technical Conference",
-    "short": "USENIX ATC'25",
-    "year": 2025,
-    "link": "https://www.usenix.org/conference/atc25/presentation/gao"
+    "venue": "59th IEEE/ACM International Symposium on Microarchitecture",
+    "short": "MICRO'26",
+    "year": 2026,
+    "link": null
   },
   {
-    "title": "Frugal: Efficient and Economic Embedding Model Training with Commodity GPUs",
+    "title": "Efficient Atomic Durability on eADR-enabled Persistent Memory",
     "authors": [
-      "Minhui Xie",
-      "Shaoxun Zeng",
-      "Hao Guo",
-      "Shiwei Gao",
+      "Taiyu Zhou",
+      "Yajuan Du",
+      "Fan Yang",
+      "Xiaojian Liao",
       "Youyou Lu"
     ],
-    "venue": "The 30th Conference on Architectural Support for Programming Languages and Operating Systems",
-    "short": "ASPLOS'25",
-    "year": 2025,
-    "link": "https://dl.acm.org/doi/10.1145/3669940.3707245"
+    "venue": "31st International Conference on Parallel Architectures and Compilation Techniques",
+    "short": "PACT'22",
+    "year": 2022,
+    "link": null
   },
   {
-    "title": "Medusa: Accelerating Serverless LLM Inference with Materialization",
+    "title": "Aria: Tolerating Skewed Workloads in Secure In-memory Key-value Stores",
     "authors": [
-      "Shaoxun Zeng",
-      "Minhui Xie",
-      "Shiwei Gao",
+      "Fan Yang",
       "Youmin Chen",
-      "Youyou Lu"
-    ],
-    "venue": "The 30th Conference on Architectural Support for Programming Languages and Operating Systems",
-    "short": "ASPLOS'25",
-    "year": 2025,
-    "link": "https://dl.acm.org/doi/10.1145/3669940.3707285"
-  },
-  {
-    "title": "Volley: Accelerating Write-Read Orders in Disaggregated Storage",
-    "authors": [
-      "Shaoxun Zeng",
-      "Xiaojian Liao",
-      "Hao Guo",
-      "Youyou Lu"
-    ],
-    "venue": "The 19th European Conference on Computer Systems",
-    "short": "EuroSys'24",
-    "year": 2024,
-    "link": "https://dl.acm.org/doi/10.1145/3627703.3650090"
-  },
-  {
-    "title": "面向高速硬件的高性能文件系统",
-    "authors": [
       "Youyou Lu",
-      "Hao Guo",
-      "Shaoxun Zeng",
-      "Yitian Yang"
-    ],
-    "venue": "中国计算机学会通讯",
-    "short": "CCCF",
-    "year": 2024,
-    "link": "https://storage.cs.tsinghua.edu.cn/papers/%E9%9D%A2%E5%90%91%E9%AB%98%E9%80%9F%E7%A1%AC%E4%BB%B6%E7%9A%84%E9%AB%98%E6%80%A7%E8%83%BD%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F.pdf"
-  },
-  {
-    "title": "SingularFS: A Billion-Scale Distributed File System Using a Single Metadata Server",
-    "authors": [
-      "Hao Guo",
-      "Youyou Lu",
-      "Wenhao Lv",
-      "Xiaojian Liao",
-      "Shaoxun Zeng",
+      "Qing Wang",
       "Jiwu Shu"
     ],
-    "venue": "USENIX Annual Technical Conference",
-    "short": "USENIX ATC'23",
-    "year": 2023,
-    "link": "https://www.usenix.org/conference/atc23/presentation/guo"
+    "venue": "37th IEEE International Conference on Data Engineering",
+    "short": "ICDE'21",
+    "year": 2021,
+    "link": "https://doi.org/10.1109/ICDE51399.2021.00093",
+    "pdf": "https://storage.cs.tsinghua.edu.cn/papers/icde21-aria.pdf"
+  },
+  {
+    "title": "ShieldNVM: An Efficient and Fast Recoverable System for Secure Non-Volatile Memory",
+    "authors": [
+      "Fan Yang",
+      "Youmin Chen",
+      "Haiyu Mao",
+      "Youyou Lu",
+      "Jiwu Shu"
+    ],
+    "venue": "ACM Transactions on Storage, 16(2)",
+    "short": "TOS'20",
+    "year": 2020,
+    "link": "https://storage.cs.tsinghua.edu.cn/papers/tos20shieldnvm.pdf"
+  },
+  {
+    "title": "Survey on Secure Persistent Memory Storage",
+    "authors": [
+      "Fan Yang",
+      "Fei Li",
+      "Jiwu Shu"
+    ],
+    "venue": "Journal of Computer Research and Development, 57(5): 912–927 (in Chinese)",
+    "short": "CRAD'20",
+    "year": 2020,
+    "link": null
+  },
+  {
+    "title": "InvisibleFL: Federated Learning over Non-Informative Intermediate Updates against Multimedia Privacy Leakages",
+    "authors": [
+      "Qiushi Li",
+      "Wenwu Zhu",
+      "Chao Wu",
+      "Xinglin Pan",
+      "Fan Yang",
+      "Yuezhi Zhou",
+      "Yaoxue Zhang"
+    ],
+    "venue": "28th ACM International Conference on Multimedia",
+    "short": "ACM MM'20",
+    "year": 2020,
+    "link": "https://doi.org/10.1145/3394171.3413923"
+  },
+  {
+    "title": "Improving the Concurrency Performance of Persistent Memory Transactions on Multicores",
+    "authors": [
+      "Qing Wang",
+      "Youyou Lu",
+      "Zhongjie Wu",
+      "Fan Yang",
+      "Jiwu Shu"
+    ],
+    "venue": "57th ACM/IEEE Design Automation Conference",
+    "short": "DAC'20",
+    "year": 2020,
+    "link": "https://storage.cs.tsinghua.edu.cn/papers/dac20-sp3.pdf"
+  },
+  {
+    "title": "FlatStore: An Efficient Log-Structured Key-Value Storage Engine for Persistent Memory",
+    "authors": [
+      "Youmin Chen",
+      "Youyou Lu",
+      "Fan Yang",
+      "Qing Wang",
+      "Yang Wang",
+      "Jiwu Shu"
+    ],
+    "venue": "25th International Conference on Architectural Support for Programming Languages and Operating Systems",
+    "short": "ASPLOS'20",
+    "year": 2020,
+    "link": "https://storage.cs.tsinghua.edu.cn/papers/asplos20-flatstore.pdf"
+  },
+  {
+    "title": "No Compromises: Secure NVM with Crash Consistency, Write-Efficiency and High-Performance",
+    "authors": [
+      "Fan Yang",
+      "Youyou Lu",
+      "Youmin Chen",
+      "Haiyu Mao",
+      "Jiwu Shu"
+    ],
+    "venue": "56th ACM/IEEE Design Automation Conference",
+    "short": "DAC'19",
+    "year": 2019,
+    "link": "https://storage.cs.tsinghua.edu.cn/papers/dac19-ccNVM.pdf"
+  },
+  {
+    "title": "Reducing Rename Overhead in Full-Path-Indexed File System",
+    "authors": [
+      "Longhua Wang",
+      "Youyou Lu",
+      "Siyang Li",
+      "Fan Yang",
+      "Jiwu Shu"
+    ],
+    "venue": "13th International Symposium on Advanced Parallel Processing Technologies",
+    "short": "APPT'19",
+    "year": 2019,
+    "link": "https://doi.org/10.1007/978-3-030-29611-7_4"
   }
 ]

@@ -105,6 +105,7 @@ body {
   top: 0;
   z-index: 10;
   display: flex;
+  flex-wrap: wrap;
   gap: 1.75rem;
   padding: 0.7rem 0;
   margin-bottom: 2rem;
@@ -363,7 +364,7 @@ a:focus-visible {
 }
 
 .highlight {
-  font-weight: 500;
+  font-weight: 650;
   color: #1a1a1a;
 }
 
@@ -478,7 +479,7 @@ footer p {
   }
 
   .section-nav a {
-    font-size: 0.8125rem;
+    font-size: 0.875rem;
   }
 
   section {
@@ -508,6 +509,41 @@ footer p {
 }
 
 /* ===== 宽屏 ===== */
+.skip-link {
+  position: absolute;
+  top: -5rem;
+  left: 1rem;
+  z-index: 20;
+  padding: 0.75rem;
+  background: #fff;
+  color: #0066cc;
+}
+.skip-link:focus { top: 0.5rem; }
+.name-zh { font-size: 0.72em; font-weight: 400; margin-left: 0.35em; color: #555; }
+.profile-links { display: flex; gap: 1rem; flex-wrap: wrap; }
+.email-link { overflow-wrap: anywhere; }
+.experience-heading { display: flex; justify-content: space-between; gap: 0.4rem 1rem; flex-wrap: wrap; }
+.period { color: #666; font-size: 0.9rem; white-space: nowrap; }
+.work-list li { margin-bottom: 0.65em; }
+.education-list { list-style: none; padding: 0; }
+.education-list li { margin-bottom: 1rem; }
+.education-list .period { display: inline-block; margin-left: 0.75rem; }
+.education-detail { display: block; color: #555; }
+.publication-note, .paper-note { font-size: 0.875rem; color: #666; }
+.publication-note { margin-top: -0.5rem; margin-bottom: 1.25rem; }
+.honor-year { display: inline-block; color: #666; font-size: 0.9rem; margin-left: 0.5rem; }
+.paper-list-loading, .paper-list-error { grid-column: 1 / -1; }
+@media (max-width: 567px) {
+  .profile-links { justify-content: center; }
+  .section-nav a { padding: 0.35rem 0; }
+  .education-list .period { display: block; margin-left: 0; }
+  section { scroll-margin-top: 7rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  a { transition: none; }
+}
+
 @media (min-width: 1200px) {
   .page-wrap {
     max-width: 60rem;

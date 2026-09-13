@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://shaoxunzeng.github.io/sitemap.xml
+Sitemap: https://csyyyang.github.io/yfrank.github.io/sitemap.xml

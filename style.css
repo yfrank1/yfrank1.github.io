@@ -86,16 +86,16 @@ body {
 
 .avatar-rect {
   width: 140px;
-  height: 140px;
-  object-fit: cover;
-  border-radius: 8px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 0;
   flex-shrink: 0;
 }
 
 @media (min-width: 768px) {
   .avatar-rect {
     width: 180px;
-    height: 180px;
+    height: auto;
   }
 }
 
@@ -468,7 +468,7 @@ footer p {
 
   .avatar-rect {
     width: 104px;
-    height: 104px;
+    height: auto;
   }
 
   .section-nav {

@@ -20,7 +20,7 @@ The repository is a **personal site**: its name `yfrank1.github.io` matches the 
 | `papers/publications.json` | Publication records, authors, years, and verified paper links |
 | `script.js` | Renders publication groups and highlights Fan Yang, including co-first authorship |
 | `style.css` | Responsive layout and styling |
-| `assets/yf.jpg` | Profile photo already present in the repository |
+| `assets/yf-white.png` | White-background portrait, displayed without cropping |
 | `render.py` | Runs the shared JavaScript renderer using Node.js and generates the static page |
 | `index.html` | Generated page served by GitHub Pages; all publications work without JavaScript |
 | `robots.txt`, `sitemap.xml` | Search engine discovery with the correct personal-site URL |

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://csyyyang.github.io/yfrank.github.io/sitemap.xml
+Sitemap: https://yfrank1.github.io/sitemap.xml

@@ -4,7 +4,7 @@ This file provides guidance to coding agents when working with code in this repo
 
 ## Project Overview
 
-Personal academic and professional website for Fan Yang (杨帆), hosted at `https://csyyyang.github.io/yfrank.github.io/` using GitHub Pages. The site uses a hybrid static/dynamic rendering approach: `js_index.html` is the editable source template, and `index.html` is the pre-rendered static output served to users.
+Personal academic and professional website for Fan Yang (杨帆), hosted at `https://yfrank1.github.io/` using GitHub Pages. The site uses a hybrid static/dynamic rendering approach: `js_index.html` is the editable source template, and `index.html` is the pre-rendered static output served to users.
 
 ## Build
 

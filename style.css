@@ -85,7 +85,7 @@ body {
 }
 
 .profile-portrait {
-  width: 140px;
+  width: 112px;
   height: auto;
   max-height: none;
   aspect-ratio: auto;
@@ -98,7 +98,7 @@ body {
 
 @media (min-width: 768px) {
   .profile-portrait {
-    width: 180px;
+    width: 144px;
     height: auto;
   }
 }
@@ -471,7 +471,7 @@ footer p {
   }
 
   .profile-portrait {
-    width: 104px;
+    width: 88px;
     height: auto;
   }
 

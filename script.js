@@ -34,7 +34,7 @@ function renderPublications(papers, author = 'Fan Yang') {
         const authors = paper.authors.map(name => cleanName(name) === author
           ? '<strong class="highlight">' + escape(name) + '</strong>' : escape(name)).join(', ');
         const awardInline = paper.award && paper.award.length < 30
-          ? ' (<span class="award-inline">' + escape(paper.award) + '</span>)' : '';
+          ? ' (<strong class="award-inline"><em>' + escape(paper.award) + '</em></strong>)' : '';
         const awardBlock = paper.award && paper.award.length >= 30
           ? '<br><span class="award">' + escape(paper.award) + '</span>' : '';
         const note = paper.note ? '<br><span class="paper-note">' + escape(paper.note) + '</span>' : '';

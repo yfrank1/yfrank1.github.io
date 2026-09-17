@@ -28,7 +28,8 @@
     "equalContribution": [
       "Qing Wang",
       "Fan Yang"
-    ]
+    ],
+    "award": "Best Paper Award Candidate"
   },
   {
     "title": "Hera: Eliminating the I/O Tax of RAID on High-Capacity SSDs",

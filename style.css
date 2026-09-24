@@ -529,6 +529,10 @@ footer p {
 .experience-heading { display: flex; justify-content: space-between; gap: 0.4rem 1rem; flex-wrap: wrap; }
 .period { color: #666; font-size: 0.9rem; white-space: nowrap; }
 .work-list li { margin-bottom: 0.65em; }
+.work-architecture { margin: 1.5rem 0 0; }
+.work-architecture-image { display: block; padding: 0; border: 0; }
+.work-architecture img { display: block; width: 100%; height: auto; }
+.work-architecture figcaption { margin-top: 0.6rem; color: #666; font-size: 0.875rem; line-height: 1.6; }
 .education-list { list-style: none; padding: 0; }
 .education-list li { margin-bottom: 1rem; }
 .education-list .period { display: inline-block; margin-left: 0.75rem; }

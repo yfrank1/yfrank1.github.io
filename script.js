@@ -40,7 +40,7 @@ function renderPublications(papers, author = 'Fan Yang') {
           ? '<br><strong class="award"><em>' + escape(paper.award) + '</em></strong>' : '';
         const note = paper.note ? '<br><span class="paper-note">' + escape(paper.note) + '</span>' : '';
         const ccf = paper.ccfLabel ? ' <span class="ccf-rating">[' +
-          (paper.ccfSource ? link(paper.ccfSource, paper.ccfLabel, 'blue-tag') : escape(paper.ccfLabel)) + ']</span>' : '';
+          escape(paper.ccfLabel) + ']</span>' : '';
         return '<li><span class="paper-heading">' + tag + title + pdf + code + '</span>' +
           '<span class="authors">' + authors + '</span><br>' +
           '<span class="venue-full">' + escape([paper.venue, paper.year].filter(value => value !== null && value !== undefined).join(', ')) + awardInline + '</span>' +

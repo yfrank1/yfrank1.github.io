@@ -12,7 +12,8 @@ function renderPublications(papers, author = 'Fan Yang') {
   };
   const grouped = new Map();
   for (const paper of papers) {
-    if (!Number.isInteger(paper.year) || !paper.title || !paper.venue ||
+    if ((paper.year !== null && !Number.isInteger(paper.year)) || !paper.title ||
+        (paper.venue !== null && typeof paper.venue !== 'string') ||
         !Array.isArray(paper.authors) || !paper.authors.length ||
         !paper.authors.every(name => typeof name === 'string')) {
       throw new Error('Invalid publication record.');
@@ -21,7 +22,7 @@ function renderPublications(papers, author = 'Fan Yang') {
     grouped.get(paper.year).push(paper);
   }
 
-  return [...grouped.keys()].sort((a, b) => b - a).map(year => {
+  return [...grouped.keys()].sort((a, b) => a === null ? -1 : b === null ? 1 : b - a).map(year => {
     const items = [...grouped.get(year)]
       .sort((a, b) => Number(isLeadAuthor(b)) - Number(isLeadAuthor(a)))
       .map(paper => {
@@ -36,14 +37,14 @@ function renderPublications(papers, author = 'Fan Yang') {
         const awardInline = paper.award && paper.award.length < 30
           ? ' (<strong class="award-inline"><em>' + escape(paper.award) + '</em></strong>)' : '';
         const awardBlock = paper.award && paper.award.length >= 30
-          ? '<br><span class="award">' + escape(paper.award) + '</span>' : '';
+          ? '<br><strong class="award"><em>' + escape(paper.award) + '</em></strong>' : '';
         const note = paper.note ? '<br><span class="paper-note">' + escape(paper.note) + '</span>' : '';
         return '<li><span class="paper-heading">' + tag + title + pdf + code + '</span>' +
           '<span class="authors">' + authors + '</span><br>' +
-          '<span class="venue-full">' + escape(paper.venue) + ', ' + year + awardInline + '</span>' +
+          '<span class="venue-full">' + escape([paper.venue, paper.year].filter(value => value !== null && value !== undefined).join(', ')) + awardInline + '</span>' +
           awardBlock + note + '</li>';
       }).join('\n');
-    return '<h3>' + year + '</h3>\n<ul>\n' + items + '\n</ul>';
+    return '<h3>' + (year === null ? 'Accepted / Forthcoming' : year) + '</h3>\n<ul>\n' + items + '\n</ul>';
   }).join('\n');
 }
 

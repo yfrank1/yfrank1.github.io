@@ -1,5 +1,60 @@
 [
   {
+    "title": "Tape in the Cloud: A Cost-Efficient Archive Storage System",
+    "authors": [
+      "Fan Yang*",
+      "Qing Wang*",
+      "Leiming Chen",
+      "Xiaodan Yan",
+      "Lanzhe Li",
+      "Pingchang Bai",
+      "Geng Xiao",
+      "Yongpeng Chen",
+      "Hao Lan",
+      "Bangzhu Chen",
+      "Chenrui Liu",
+      "Bin Huang",
+      "Zigan Luo",
+      "Mingyu Xie",
+      "Yu Wang",
+      "Youyou Lu",
+      "Qiang Liu",
+      "Huatao Wu",
+      "Jiwu Shu†"
+    ],
+    "venue": null,
+    "short": null,
+    "year": 2026,
+    "link": null,
+    "equalContribution": [
+      "Fan Yang",
+      "Qing Wang"
+    ],
+    "award": "Fast-Tracked, Accepted without revisions",
+    "note": "* Equal contribution. † Corresponding author."
+  },
+  {
+    "title": "Beyond Overlap: Hierarchical Graph Abstraction for Out-of-Core Vector Search",
+    "authors": [
+      "Lizheng Chen",
+      "Pinhuan Wang",
+      "Shaonan Ma",
+      "Jie Zhang",
+      "Qing Wang",
+      "Zhengyi Yang",
+      "Heng Zhang",
+      "Mingxing Zhang",
+      "Fan Yang",
+      "Guihai Chen",
+      "Chen Tian",
+      "Chengying Huan"
+    ],
+    "venue": "Proceedings of the European Conference on Computer Systems",
+    "short": "EuroSys'27",
+    "year": 2027,
+    "link": null
+  },
+  {
     "title": "Cost-efficient Archive Cloud Storage with Tape: Design and Deployment",
     "authors": [
       "Qing Wang*",
@@ -29,7 +84,7 @@
       "Qing Wang",
       "Fan Yang"
     ],
-    "award": "Best Paper Award Candidate"
+    "award": "Best Paper Award Candidate, Invited for fast-tracked publication in ACM Transactions on Storage"
   },
   {
     "title": "Hera: Eliminating the I/O Tax of RAID on High-Capacity SSDs",

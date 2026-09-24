@@ -36,7 +36,7 @@ Use `js_index.html` for live development (dynamic JS), then run the build to reg
 
 ### Content data
 - **`papers/publications.json`** — single source of truth for all publications. Each entry has: `title`, `authors` (array), `venue`, `short`, `year` (integer), `link`, and optional `pdf`, `code`, `award`, `note`, and `equalContribution` fields. Publications are grouped by year (descending). Fan Yang is bold/highlighted automatically, including starred author names; first and co-first authored papers appear first within each year.
-- `year` must be an integer (not a string). `link` and `code` should be a URL string or `null`; omitting them is also acceptable.
+- `year` must be an integer (not a string), or `null` when the publication year is not provided. Records with `year: null` appear under Accepted / Forthcoming; `venue` may also be `null` when not provided. `link` and `code` should be a URL string or `null`; omitting them is also acceptable.
 - Awards shorter than 30 characters are displayed inline after the venue; longer awards appear on a new line below.
 - Papers with no `link` render the title as plain text (no `<a>` tag); do not use `"link": ""` as a substitute for no link — use `null` or omit the field.
 

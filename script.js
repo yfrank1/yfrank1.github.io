@@ -39,10 +39,12 @@ function renderPublications(papers, author = 'Fan Yang') {
         const awardBlock = paper.award && paper.award.length >= 30
           ? '<br><strong class="award"><em>' + escape(paper.award) + '</em></strong>' : '';
         const note = paper.note ? '<br><span class="paper-note">' + escape(paper.note) + '</span>' : '';
+        const ccf = paper.ccfLabel ? ' <span class="ccf-rating">[' +
+          (paper.ccfSource ? link(paper.ccfSource, paper.ccfLabel, 'blue-tag') : escape(paper.ccfLabel)) + ']</span>' : '';
         return '<li><span class="paper-heading">' + tag + title + pdf + code + '</span>' +
           '<span class="authors">' + authors + '</span><br>' +
           '<span class="venue-full">' + escape([paper.venue, paper.year].filter(value => value !== null && value !== undefined).join(', ')) + awardInline + '</span>' +
-          awardBlock + note + '</li>';
+          awardBlock + note + ccf + '</li>';
       }).join('\n');
     return '<h3>' + (year === null ? 'Accepted / Forthcoming' : year) + '</h3>\n<ul>\n' + items + '\n</ul>';
   }).join('\n');

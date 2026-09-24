@@ -553,3 +553,6 @@ footer p {
     max-width: 60rem;
   }
 }
+
+.ccf-rating { font-weight: 600; }
+.ccf-basis { font-size: 0.875rem; color: #555; line-height: 1.6; }

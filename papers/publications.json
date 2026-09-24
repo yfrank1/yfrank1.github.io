@@ -22,8 +22,8 @@
       "Huatao Wu",
       "Jiwu Shu†"
     ],
-    "venue": null,
-    "short": null,
+    "venue": "ACM Transactions on Storage",
+    "short": "TOS'26",
     "year": 2026,
     "link": null,
     "equalContribution": [
@@ -31,7 +31,8 @@
       "Qing Wang"
     ],
     "award": "Fast-Tracked, Accepted without revisions",
-    "note": "* Equal contribution. † Corresponding author."
+    "ccfLabel": "CCF-A",
+    "ccfSource": "https://www.ccf.org.cn/Academic_Evaluation/By_category/"
   },
   {
     "title": "Beyond Overlap: Hierarchical Graph Abstraction for Out-of-Core Vector Search",
@@ -52,7 +53,9 @@
     "venue": "Proceedings of the European Conference on Computer Systems",
     "short": "EuroSys'27",
     "year": 2027,
-    "link": null
+    "link": null,
+    "ccfLabel": "CCF-A",
+    "ccfSource": "https://www.ccf.org.cn/Academic_Evaluation/By_category/"
   },
   {
     "title": "Cost-efficient Archive Cloud Storage with Tape: Design and Deployment",
@@ -84,7 +87,9 @@
       "Qing Wang",
       "Fan Yang"
     ],
-    "award": "Best Paper Award Candidate, Invited for fast-tracked publication in ACM Transactions on Storage"
+    "award": "Best Paper Award Candidate, Invited for fast-tracked publication in ACM Transactions on Storage",
+    "ccfLabel": "CCF-A",
+    "ccfSource": "https://www.ccf.org.cn/Academic_Evaluation/By_category/"
   },
   {
     "title": "Hera: Eliminating the I/O Tax of RAID on High-Capacity SSDs",
@@ -101,7 +106,9 @@
     "venue": "59th IEEE/ACM International Symposium on Microarchitecture",
     "short": "MICRO'26",
     "year": 2026,
-    "link": null
+    "link": null,
+    "ccfLabel": "CCF-A",
+    "ccfSource": "https://www.ccf.org.cn/Academic_Evaluation/By_category/"
   },
   {
     "title": "Efficient Atomic Durability on eADR-enabled Persistent Memory",
@@ -115,7 +122,9 @@
     "venue": "31st International Conference on Parallel Architectures and Compilation Techniques",
     "short": "PACT'22",
     "year": 2022,
-    "link": "https://doi.org/10.1145/3559009.3569676"
+    "link": "https://doi.org/10.1145/3559009.3569676",
+    "ccfLabel": "CCF-B",
+    "ccfSource": "https://www.ccf.org.cn/Academic_Evaluation/By_category/"
   },
   {
     "title": "Aria: Tolerating Skewed Workloads in Secure In-memory Key-value Stores",
@@ -130,7 +139,9 @@
     "short": "ICDE'21",
     "year": 2021,
     "link": "https://doi.org/10.1109/ICDE51399.2021.00093",
-    "pdf": "https://storage.cs.tsinghua.edu.cn/papers/icde21-aria.pdf"
+    "pdf": "https://storage.cs.tsinghua.edu.cn/papers/icde21-aria.pdf",
+    "ccfLabel": "CCF-A",
+    "ccfSource": "https://www.ccf.org.cn/Academic_Evaluation/By_category/"
   },
   {
     "title": "ShieldNVM: An Efficient and Fast Recoverable System for Secure Non-Volatile Memory",
@@ -144,7 +155,9 @@
     "venue": "ACM Transactions on Storage, 16(2), pp. 1–31",
     "short": "TOS'20",
     "year": 2020,
-    "link": "https://storage.cs.tsinghua.edu.cn/papers/tos20shieldnvm.pdf"
+    "link": "https://storage.cs.tsinghua.edu.cn/papers/tos20shieldnvm.pdf",
+    "ccfLabel": "CCF-A",
+    "ccfSource": "https://www.ccf.org.cn/Academic_Evaluation/By_category/"
   },
   {
     "title": "Survey on Secure Persistent Memory Storage",
@@ -157,7 +170,9 @@
     "short": "CRAD'20",
     "year": 2020,
     "link": "https://doi.org/10.7544/issn1000-1239.2020.20190820",
-    "pdf": "https://crad.ict.ac.cn/cn/article/pdf/preview/10.7544/issn1000-1239.2020.20190820.pdf"
+    "pdf": "https://crad.ict.ac.cn/cn/article/pdf/preview/10.7544/issn1000-1239.2020.20190820.pdf",
+    "ccfLabel": "CCF-A (Chinese journals)",
+    "ccfSource": "https://www.ict.ac.cn/xscbw/jsjyjyfz/"
   },
   {
     "title": "InvisibleFL: Federated Learning over Non-Informative Intermediate Updates against Multimedia Privacy Leakages",
@@ -173,7 +188,9 @@
     "venue": "28th ACM International Conference on Multimedia, pp. 753–762",
     "short": "ACM MM'20",
     "year": 2020,
-    "link": "https://doi.org/10.1145/3394171.3413923"
+    "link": "https://doi.org/10.1145/3394171.3413923",
+    "ccfLabel": "CCF-A",
+    "ccfSource": "https://www.ccf.org.cn/Academic_Evaluation/By_category/"
   },
   {
     "title": "Improving the Concurrency Performance of Persistent Memory Transactions on Multicores",
@@ -187,7 +204,9 @@
     "venue": "57th ACM/IEEE Design Automation Conference, pp. 1–6",
     "short": "DAC'20",
     "year": 2020,
-    "link": "https://storage.cs.tsinghua.edu.cn/papers/dac20-sp3.pdf"
+    "link": "https://storage.cs.tsinghua.edu.cn/papers/dac20-sp3.pdf",
+    "ccfLabel": "CCF-A",
+    "ccfSource": "https://www.ccf.org.cn/Academic_Evaluation/By_category/"
   },
   {
     "title": "FlatStore: An Efficient Log-Structured Key-Value Storage Engine for Persistent Memory",
@@ -202,7 +221,9 @@
     "venue": "25th International Conference on Architectural Support for Programming Languages and Operating Systems",
     "short": "ASPLOS'20",
     "year": 2020,
-    "link": "https://storage.cs.tsinghua.edu.cn/papers/asplos20-flatstore.pdf"
+    "link": "https://storage.cs.tsinghua.edu.cn/papers/asplos20-flatstore.pdf",
+    "ccfLabel": "CCF-A",
+    "ccfSource": "https://www.ccf.org.cn/Academic_Evaluation/By_category/"
   },
   {
     "title": "No Compromises: Secure NVM with Crash Consistency, Write-Efficiency and High-Performance",
@@ -216,7 +237,9 @@
     "venue": "56th ACM/IEEE Design Automation Conference, pp. 1–6",
     "short": "DAC'19",
     "year": 2019,
-    "link": "https://storage.cs.tsinghua.edu.cn/papers/dac19-ccNVM.pdf"
+    "link": "https://storage.cs.tsinghua.edu.cn/papers/dac19-ccNVM.pdf",
+    "ccfLabel": "CCF-A",
+    "ccfSource": "https://www.ccf.org.cn/Academic_Evaluation/By_category/"
   },
   {
     "title": "Reducing Rename Overhead in Full-Path-Indexed File System",
@@ -230,6 +253,8 @@
     "venue": "13th International Symposium on Advanced Parallel Processing Technologies, pp. 43–54",
     "short": "APPT'19",
     "year": 2019,
-    "link": "https://doi.org/10.1007/978-3-030-29611-7_4"
+    "link": "https://doi.org/10.1007/978-3-030-29611-7_4",
+    "ccfLabel": "CCF-C",
+    "ccfSource": "https://www.ccf.org.cn/Academic_Evaluation/By_category/"
   }
 ]

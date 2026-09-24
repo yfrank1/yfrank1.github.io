@@ -54,3 +54,5 @@ To update publications: edit `papers/publications.json`, then run `bash build.sh
 To update page content (bio, research section, links, etc.): edit `js_index.html`, then run `bash build.sh`.
 
 Never manually edit `index.html` — it is overwritten on every build.
+
+CCF labels use `ccfLabel` and `ccfSource` in publications.json. International ratings use the 2026 seventh edition (not publication-year ratings); CRAD uses the separate 2019 Chinese-journal A category. The user confirmed Tape in the Cloud's venue as ACM Transactions on Storage (2026), rated CCF-A.

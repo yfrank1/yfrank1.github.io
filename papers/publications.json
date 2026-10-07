@@ -25,7 +25,8 @@
     "venue": "ACM Transactions on Storage",
     "short": "TOS'26",
     "year": 2026,
-    "link": null,
+    "link": "https://doi.org/10.1145/3849624",
+    "pdf": "https://dl.acm.org/doi/pdf/10.1145/3849624",
     "equalContribution": [
       "Fan Yang",
       "Qing Wang"

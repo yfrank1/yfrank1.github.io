@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="1460" viewBox="0 0 680 1460" role="img" aria-labelledby="title desc">
+<title id="title">Storage platform architecture — mobile view</title>
+<desc id="desc">Upper-layer object, file, block, and KV services sit above the scope of responsibility. Within the boundary: a core software platform with persistent storage and distributed memory pools; compute–storage disaggregation, separation of data and control planes, and hardware–software co-design; hardware including NICs, SSD controllers, NPUs and CPUs; and DRAM, NAND flash, HDDs, and tape. Reliability, performance, scalability, and cost efficiency guide the design.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#8b9eaf"/></marker></defs>
+<rect width="680" height="1460" fill="white"/>
+<g font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="middle">
+<text x="340" y="39" font-size="29" font-weight="600" fill="#16304d">Upper-layer services</text>
+<rect x="28" y="62" width="144" height="66" rx="10" fill="#f7f9fc" stroke="#d8e2ed" stroke-width="2"/>
+<text x="100" y="105" font-size="30" font-weight="650" fill="#16304d">Object</text>
+<rect x="188" y="62" width="144" height="66" rx="10" fill="#f7f9fc" stroke="#d8e2ed" stroke-width="2"/>
+<text x="260" y="105" font-size="30" font-weight="650" fill="#16304d">File</text>
+<rect x="348" y="62" width="144" height="66" rx="10" fill="#f7f9fc" stroke="#d8e2ed" stroke-width="2"/>
+<text x="420" y="105" font-size="30" font-weight="650" fill="#16304d">Block</text>
+<rect x="508" y="62" width="144" height="66" rx="10" fill="#f7f9fc" stroke="#d8e2ed" stroke-width="2"/>
+<text x="580" y="105" font-size="30" font-weight="650" fill="#16304d">KV</text>
+<line x1="340" y1="142" x2="340" y2="177" stroke="#8b9eaf" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="16" y="196" width="648" height="1160" rx="12" fill="none" stroke="#b9353d" stroke-width="2.5" stroke-dasharray="10 7"/>
+<rect x="120" y="177" width="440" height="42" fill="white"/>
+<text x="340" y="209" font-size="30" font-weight="650" fill="#a72d35">Scope of responsibility</text>
+<text x="340" y="254" font-size="29" font-weight="650" fill="#16304d">Core software platform</text>
+<rect x="44" y="276" width="592" height="136" rx="10" fill="#edf4fe" stroke="#bdd1ea" stroke-width="2"/>
+<text x="340" y="320" font-size="34" font-weight="650" fill="#285d9c">Persistent Storage Pool</text>
+<text x="340" y="359" font-size="29" font-weight="400" fill="#465c72">Resource pooling · Reliability</text>
+<text x="340" y="393" font-size="29" font-weight="400" fill="#465c72">Large-scale deployment</text>
+<line x1="340" y1="421" x2="340" y2="450" marker-start="url(#arrow)" stroke="#8b9eaf" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="44" y="466" width="592" height="136" rx="10" fill="#eef7f5" stroke="#bddad4" stroke-width="2"/>
+<text x="340" y="510" font-size="34" font-weight="650" fill="#22766e">Distributed Memory Pool</text>
+<text x="340" y="549" font-size="29" font-weight="400" fill="#465c72">KV cache · Hierarchical memory</text>
+<text x="340" y="583" font-size="29" font-weight="400" fill="#465c72">Elasticity · Large-scale deployment</text>
+<rect x="44" y="626" width="592" height="200" rx="10" fill="#ffffff" stroke="#d8e2ed" stroke-width="2"/>
+<text x="340" y="664" font-size="29" font-weight="650" fill="#16304d">Shared design principles</text>
+<text x="340" y="710" font-size="29" font-weight="500" fill="#285d9c">Compute–storage disaggregation</text>
+<text x="340" y="754" font-size="29" font-weight="500" fill="#285d9c">Separate data and control planes</text>
+<text x="340" y="798" font-size="29" font-weight="500" fill="#285d9c">Hardware–software co-design</text>
+<line x1="340" y1="839" x2="340" y2="869" stroke="#8b9eaf" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="340" y="916" font-size="29" font-weight="650" fill="#16304d">Hardware platform</text>
+<rect x="44" y="940" width="188" height="104" rx="10" fill="#f7f9fc" stroke="#d8e2ed" stroke-width="2"/>
+<text x="138" y="1003" font-size="29" font-weight="650" fill="#16304d">NIC</text>
+<rect x="246" y="940" width="188" height="104" rx="10" fill="#f7f9fc" stroke="#d8e2ed" stroke-width="2"/>
+<text x="340" y="984" font-size="29" font-weight="650" fill="#16304d">SSD</text>
+<text x="340" y="1021" font-size="29" font-weight="500" fill="#16304d">Controller</text>
+<rect x="448" y="940" width="188" height="104" rx="10" fill="#f7f9fc" stroke="#d8e2ed" stroke-width="2"/>
+<text x="542" y="1003" font-size="29" font-weight="650" fill="#16304d">NPU / CPU</text>
+<text x="340" y="1092" font-size="29" font-weight="650" fill="#16304d">Storage media</text>
+<rect x="44" y="1115" width="288" height="92" rx="10" fill="#f7f9fc" stroke="#d8e2ed" stroke-width="2"/>
+<text x="188" y="1174" font-size="30" font-weight="650" fill="#16304d">DRAM</text>
+<rect x="348" y="1115" width="288" height="92" rx="10" fill="#f7f9fc" stroke="#d8e2ed" stroke-width="2"/>
+<text x="492" y="1154" font-size="30" font-weight="650" fill="#16304d">NAND</text>
+<text x="492" y="1188" font-size="29" font-weight="400" fill="#465c72">TLC / QLC</text>
+<rect x="44" y="1225" width="288" height="92" rx="10" fill="#f7f9fc" stroke="#d8e2ed" stroke-width="2"/>
+<text x="188" y="1264" font-size="30" font-weight="650" fill="#16304d">HDD</text>
+<text x="188" y="1298" font-size="29" font-weight="400" fill="#465c72">HAMR / SMR</text>
+<rect x="348" y="1225" width="288" height="92" rx="10" fill="#f7f9fc" stroke="#d8e2ed" stroke-width="2"/>
+<text x="492" y="1284" font-size="30" font-weight="650" fill="#16304d">Tape</text>
+<text x="340" y="1402" font-size="29" font-weight="400" fill="#465c72">Reliability · Performance</text>
+<text x="340" y="1440" font-size="29" font-weight="400" fill="#465c72">Scalability · Cost efficiency</text>
+</g></svg>

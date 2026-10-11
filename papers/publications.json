@@ -1,0 +1,263 @@
+[
+  {
+    "title": "Tape in the Cloud: A Cost-Efficient Archive Storage System",
+    "authors": [
+      "Fan Yang*",
+      "Qing Wang*",
+      "Leiming Chen",
+      "Xiaodan Yan",
+      "Lanzhe Li",
+      "Pingchang Bai",
+      "Geng Xiao",
+      "Yongpeng Chen",
+      "Hao Lan",
+      "Bangzhu Chen",
+      "Chenrui Liu",
+      "Bin Huang",
+      "Zigan Luo",
+      "Mingyu Xie",
+      "Yu Wang",
+      "Youyou Lu",
+      "Qiang Liu",
+      "Huatao Wu",
+      "Jiwu Shu"
+    ],
+    "venue": "ACM Transactions on Storage",
+    "short": "TOS'26",
+    "year": 2026,
+    "link": "https://doi.org/10.1145/3849624",
+    "pdf": "https://dl.acm.org/doi/pdf/10.1145/3849624",
+    "equalContribution": [
+      "Fan Yang",
+      "Qing Wang"
+    ],
+    "note": "Fast-tracked from FAST 2026; accepted without revisions.",
+    "highlightNote": true,
+    "ccfLabel": "CCF-A",
+    "ccfSource": "https://www.ccf.org.cn/Academic_Evaluation/By_category/"
+  },
+  {
+    "title": "Beyond Overlap: Hierarchical Graph Abstraction for Out-of-Core Vector Search",
+    "authors": [
+      "Lizheng Chen",
+      "Pinhuan Wang",
+      "Shaonan Ma",
+      "Jie Zhang",
+      "Qing Wang",
+      "Zhengyi Yang",
+      "Heng Zhang",
+      "Mingxing Zhang",
+      "Fan Yang",
+      "Guihai Chen",
+      "Chen Tian",
+      "Chengying Huan"
+    ],
+    "venue": "Proceedings of the European Conference on Computer Systems",
+    "short": "EuroSys'27",
+    "year": 2027,
+    "link": null,
+    "note": "Accepted; to appear",
+    "ccfLabel": "CCF-A",
+    "ccfSource": "https://www.ccf.org.cn/Academic_Evaluation/By_category/"
+  },
+  {
+    "title": "Cost-efficient Archive Cloud Storage with Tape: Design and Deployment",
+    "authors": [
+      "Qing Wang*",
+      "Fan Yang*",
+      "Qiang Liu",
+      "Geng Xiao",
+      "Yongpeng Chen",
+      "Hao Lan",
+      "Leiming Chen",
+      "Bangzhu Chen",
+      "Chenrui Liu",
+      "Pingchang Bai",
+      "Bin Huang",
+      "Zigan Luo",
+      "Mingyu Xie",
+      "Yu Wang",
+      "Youyou Lu",
+      "Huatao Wu",
+      "Jiwu Shu"
+    ],
+    "venue": "24th USENIX Conference on File and Storage Technologies, pp. 19–34",
+    "short": "FAST'26",
+    "year": 2026,
+    "link": "https://www.usenix.org/conference/fast26/presentation/wang",
+    "pdf": "https://www.usenix.org/system/files/fast26-wang.pdf",
+    "equalContribution": [
+      "Qing Wang",
+      "Fan Yang"
+    ],
+    "award": "Best Paper Award Candidate",
+    "note": "Invited for fast-tracked publication in ACM Transactions on Storage.",
+    "highlightNote": true,
+    "ccfLabel": "CCF-A",
+    "ccfSource": "https://www.ccf.org.cn/Academic_Evaluation/By_category/"
+  },
+  {
+    "title": "Hera: Eliminating the I/O Tax of RAID on High-Capacity SSDs",
+    "authors": [
+      "Jian Chen",
+      "Congming Gao",
+      "Fan Yang",
+      "Qing Wang",
+      "Zhengzhi Xin",
+      "Yuhao Zhang",
+      "Youyou Lu",
+      "Jiwu Shu"
+    ],
+    "venue": "59th IEEE/ACM International Symposium on Microarchitecture",
+    "short": "MICRO'26",
+    "year": 2026,
+    "link": null,
+    "ccfLabel": "CCF-A",
+    "ccfSource": "https://www.ccf.org.cn/Academic_Evaluation/By_category/"
+  },
+  {
+    "title": "Efficient Atomic Durability on eADR-enabled Persistent Memory",
+    "authors": [
+      "Taiyu Zhou",
+      "Yajuan Du",
+      "Fan Yang",
+      "Xiaojian Liao",
+      "Youyou Lu"
+    ],
+    "venue": "31st International Conference on Parallel Architectures and Compilation Techniques",
+    "short": "PACT'22",
+    "year": 2022,
+    "link": "https://doi.org/10.1145/3559009.3569676",
+    "ccfLabel": "CCF-B",
+    "ccfSource": "https://www.ccf.org.cn/Academic_Evaluation/By_category/"
+  },
+  {
+    "title": "Aria: Tolerating Skewed Workloads in Secure In-memory Key-value Stores",
+    "authors": [
+      "Fan Yang",
+      "Youmin Chen",
+      "Youyou Lu",
+      "Qing Wang",
+      "Jiwu Shu"
+    ],
+    "venue": "37th IEEE International Conference on Data Engineering, pp. 1020–1031",
+    "short": "ICDE'21",
+    "year": 2021,
+    "link": "https://doi.org/10.1109/ICDE51399.2021.00093",
+    "pdf": "https://storage.cs.tsinghua.edu.cn/papers/icde21-aria.pdf",
+    "ccfLabel": "CCF-A",
+    "ccfSource": "https://www.ccf.org.cn/Academic_Evaluation/By_category/"
+  },
+  {
+    "title": "ShieldNVM: An Efficient and Fast Recoverable System for Secure Non-Volatile Memory",
+    "authors": [
+      "Fan Yang",
+      "Youmin Chen",
+      "Haiyu Mao",
+      "Youyou Lu",
+      "Jiwu Shu"
+    ],
+    "venue": "ACM Transactions on Storage, 16(2), pp. 1–31",
+    "short": "TOS'20",
+    "year": 2020,
+    "link": "https://storage.cs.tsinghua.edu.cn/papers/tos20shieldnvm.pdf",
+    "ccfLabel": "CCF-A",
+    "ccfSource": "https://www.ccf.org.cn/Academic_Evaluation/By_category/"
+  },
+  {
+    "title": "Survey on Secure Persistent Memory Storage",
+    "authors": [
+      "Fan Yang",
+      "Fei Li",
+      "Jiwu Shu"
+    ],
+    "venue": "Journal of Computer Research and Development, 57(5): 912–927 (in Chinese)",
+    "short": "CRAD'20",
+    "year": 2020,
+    "link": "https://crad.ict.ac.cn/cn/article/doi/10.7544/issn1000-1239.2020.20190820",
+    "pdf": "https://crad.ict.ac.cn/cn/article/pdf/preview/10.7544/issn1000-1239.2020.20190820.pdf",
+    "ccfLabel": "CCF-A (Chinese journals)",
+    "ccfSource": "https://www.ict.ac.cn/xscbw/jsjyjyfz/"
+  },
+  {
+    "title": "InvisibleFL: Federated Learning over Non-Informative Intermediate Updates against Multimedia Privacy Leakages",
+    "authors": [
+      "Qiushi Li",
+      "Wenwu Zhu",
+      "Chao Wu",
+      "Xinglin Pan",
+      "Fan Yang",
+      "Yuezhi Zhou",
+      "Yaoxue Zhang"
+    ],
+    "venue": "28th ACM International Conference on Multimedia, pp. 753–762",
+    "short": "ACM MM'20",
+    "year": 2020,
+    "link": "https://doi.org/10.1145/3394171.3413923",
+    "ccfLabel": "CCF-A",
+    "ccfSource": "https://www.ccf.org.cn/Academic_Evaluation/By_category/"
+  },
+  {
+    "title": "Improving the Concurrency Performance of Persistent Memory Transactions on Multicores",
+    "authors": [
+      "Qing Wang",
+      "Youyou Lu",
+      "Zhongjie Wu",
+      "Fan Yang",
+      "Jiwu Shu"
+    ],
+    "venue": "57th ACM/IEEE Design Automation Conference, pp. 1–6",
+    "short": "DAC'20",
+    "year": 2020,
+    "link": "https://storage.cs.tsinghua.edu.cn/papers/dac20-sp3.pdf",
+    "ccfLabel": "CCF-A",
+    "ccfSource": "https://www.ccf.org.cn/Academic_Evaluation/By_category/"
+  },
+  {
+    "title": "FlatStore: An Efficient Log-Structured Key-Value Storage Engine for Persistent Memory",
+    "authors": [
+      "Youmin Chen",
+      "Youyou Lu",
+      "Fan Yang",
+      "Qing Wang",
+      "Yang Wang",
+      "Jiwu Shu"
+    ],
+    "venue": "25th International Conference on Architectural Support for Programming Languages and Operating Systems",
+    "short": "ASPLOS'20",
+    "year": 2020,
+    "link": "https://storage.cs.tsinghua.edu.cn/papers/asplos20-flatstore.pdf",
+    "ccfLabel": "CCF-A",
+    "ccfSource": "https://www.ccf.org.cn/Academic_Evaluation/By_category/"
+  },
+  {
+    "title": "No Compromises: Secure NVM with Crash Consistency, Write-Efficiency and High-Performance",
+    "authors": [
+      "Fan Yang",
+      "Youyou Lu",
+      "Youmin Chen",
+      "Haiyu Mao",
+      "Jiwu Shu"
+    ],
+    "venue": "56th ACM/IEEE Design Automation Conference, pp. 1–6",
+    "short": "DAC'19",
+    "year": 2019,
+    "link": "https://storage.cs.tsinghua.edu.cn/papers/dac19-ccNVM.pdf",
+    "ccfLabel": "CCF-A",
+    "ccfSource": "https://www.ccf.org.cn/Academic_Evaluation/By_category/"
+  },
+  {
+    "title": "Reducing Rename Overhead in Full-Path-Indexed File System",
+    "authors": [
+      "Longhua Wang",
+      "Youyou Lu",
+      "Siyang Li",
+      "Fan Yang",
+      "Jiwu Shu"
+    ],
+    "venue": "13th International Symposium on Advanced Parallel Processing Technologies, pp. 43–54",
+    "short": "APPT'19",
+    "year": 2019,
+    "link": "https://doi.org/10.1007/978-3-030-29611-7_4"
+  }
+]

@@ -1,0 +1,28 @@
+name: Validate website
+
+on: [push, pull_request, workflow_dispatch]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.13'
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+          package-manager-cache: false
+      - name: Test build validation and failure protection
+        run: python -m unittest discover -s tests -v
+      - name: Test publication resource links
+        run: node --test tests/publications.test.js
+      - name: Validate publications and generated homepage
+        run: python render.py --check

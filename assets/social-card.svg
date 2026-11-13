@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
 <title id="title">Fan Yang — AI &amp; Cloud Storage</title>
-<desc id="desc">Fan Yang, system architect at Huawei Cloud. Distributed storage and memory systems for AI. yfrank1.github.io.</desc>
+<desc id="desc">Fan Yang, system architect and engineering manager at Huawei Cloud. Distributed storage and memory systems for AI. yfrank1.github.io.</desc>
 <rect width="1200" height="630" fill="#ffffff"/>
 <rect width="1200" height="5" fill="#285d9c"/>
 <g font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif">
@@ -8,7 +8,7 @@
 <text x="84" y="232" font-size="88" font-weight="650" letter-spacing="-2" fill="#1a1a1a">Fan Yang</text>
 <text x="88" y="299" font-size="42" font-weight="500" fill="#285d9c">AI &amp; Cloud Storage</text>
 <line x1="88" y1="341" x2="152" y2="341" stroke="#285d9c" stroke-width="3"/>
-<text x="88" y="399" font-size="27" fill="#444444">System Architect · Huawei Cloud</text>
+<text x="88" y="399" font-size="27" fill="#444444">System Architect &amp; Engineering Manager · Huawei Cloud</text>
 <text x="88" y="444" font-size="25" fill="#666666">Distributed storage · Memory systems for AI</text>
 <text x="88" y="558" font-size="22" fill="#666666">yfrank1.github.io</text>
 </g>
